@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" type="image/png" href="images/icon.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+a:link {color: #000000; text-decoration: none;}
+a:visited {color: #000000;}
+a:hover {text-decoration: underline;}
+a:active {color:#0000FF;}
+</style>
+<title>The Pet Penguin</title>
+<style type="text/css">
+body {
+  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+  background-color: #383838;
+  margin: 0;
+  padding: 0; 
+}
+
+container {
+  width: 980px
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  height: 210px;
+  width: 980px;
+  background-image: url(images/r1c1.png);
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#navi {
+  height: 42px;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F8;
+  //background-image: url(navi.png);
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #333;
+  border-right-color: #333;
+  border-bottom-color: #333;
+  border-left-color: #333;
+}
+
+#body {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F8;
+}
+
+#content {
+  width: 600px;
+  height: 2550px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #F8F8F8;
+}
+
+#sidebar {
+  width: 360px;
+  height: 2252px;
+  margin-top: -2252px;
+  margin-left: auto;
+  background-color: #F8F8F8;
+  float: right; 
+}
+
+#sidebarbox {
+  width: 180px;
+  background-color: #F8F8F8;
+  float: right;
+  margin-top: 20px;
+  margin-right: 35px;
+  margin-left: 35px;
+  border: medium double #000000;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+#container #body #content p {
+  font-family: Calibri;
+  font-size: 17px;
+  padding-left: 35px;
+}
+
+ho{
+  line-height:42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 80px;
+  padding-right: 30px;
+}
+ab{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+  border-left-style: solid;
+}
+cr{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+sa{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+la{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+tw{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+  border-left-style: solid;
+}
+ct{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 80px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+
+div.img {
+  margin-left: 20px;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  text-align: center;
+} 
+
+div.desc{
+  margin-left: 35px;  
+  font-family: helvetica;
+  font-size: 12px;  
+  text-align: left;
+  font-weight: normal;
+}
+
+#footer {
+  width: 980px;
+  height: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:42px;
+  background-color: #F8F8F8;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  vertical-align: bottom;
+}
+  hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+  hr.style-sb {
+    border: 0;
+    height: 1px;
+  width: 380px;
+    background: #333;
+}
+  hr.style-sbh {
+  margin-top:0px;
+    border: 0;
+    height: 3px;
+  width: 100px;
+    background: #333;
+}
+
+  @font-face {
+ font-family: corny;
+ src: url("Demo_ConeriaScript.eot") /* EOT file for IE */
+}
+
+  @font-face {
+ font-family: corny;
+ src: url("Demo_ConeriaScript.ttf") /* TTF file for CSS3 browsers */
+}
+  
+</style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header"onclick="location.href='home0x.html';" style="cursor: pointer;"> 
+    </div>
+  
+      <div id="navi">  
+        <ho><a href="index.html">home</a></ho>
+        <ab><a href="about.html">about</a></ab> 
+        <cr><a href="credits.html">credits</a></cr>
+            <sa><a href="story-archive.html">story archive</a></sa>
+          <la><a href="link-archive.html">link archive</a></la>
+            <tw><a href="https://twitter.com/the_petpenguin" target="_blank">twitter</a></tw>
+            <ct><a href="contact.html">contact</a></ct>
+        </div>
+    
+    <div id="body">
+ 
+      <div id="content">
+        
+        <p style="padding-top: 15px; padding-left:35px; font-family: Calibri; font-size:37px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px;">
+      2Chainz at Showbox SODO, Round 2
+    </p>
+        
+        <!-- <p>February 16th, 2014</p> -->
+        
+        <div class="img">
+              <img src= "images/IMG_0522.jpg" alt="sometext" img border="0px" width="550" height="400"/>
+        </div>  
+        <div class="desc">My best, bad photo of the show.</div>
+        
+        <p>
+I saw 2Chainz's first show in Seattle on December 21st, 2012. As luck would have it, I most recently got to see his second appearance just a few days ago on February 13th, 2014. Back in 2012 I didn't have any doubts about how good the concert was going to be. 2Chainz was making hit after hit and I knew all of them. Needless to say, he did not disappoint.
+    </p>
+    <p>
+When I got a text from a buddy telling me that 2Chainz was coming back again, I enthusiastically agreed to go, but deep down I had some doubts. Even though judging an artist by record sales these days is for the most part an outmoded metric, 2Chainz's most recent album hadn't sold as well as his previous one. It was a good album but nothing had really struck me. The cynic in me dreaded the possibility that I might leave the show saying, "It just wasn't as good as the last time."
+    </p>
+    <p>
+When the concert finally came around, I remained wary even though the show was sold out. Pusha T went on before 2Chainz. Pusha's set was entertaining but for me it was nothing awe inspiring. Admittedly, I wasn't really at the show for Pusha T. I like what he did on "Cruel Summer," but I hadn't paid much attention to him since he did "Hell Hath No Fury" when he was one half of Clipse. Pusha's set was still a lot of fun though, especially being a Seattlite. At one point he brought out Seahawk safety Kam Chancellor to further commemorate the Hawk's crushing Super Bowl victory over the Denver (1). The appearance by the Legion of Boom Member got the hometown crowd truly hyped that carried over to a rowdy rendition of "I Don't Like."
+    </p>
+        
+        <div class="img">
+              <img src= "images/IMG_0509.jpg" alt="sometext" img border="0px" width="550" height="400"/>
+        </div>  
+        <div class="desc">2Chainz's sound man holding it down.</div>
+        
+    <p>
+2Chainz took to the stage in his rightful role as headliner. He did the new hits and the old ones while standing on top of amps. He delivered what the crowd wanted and the hands never went down. There were some interesting interludes where silhouetted figures against a white screen acted out sex acts in a comical way. It was a little strange, but they were just short enough so the crowd didn't get lulled into submission. However, they did allow me to remember to snap some lame photos with my phone (2). As well 2Chainz performed, I have to give a lot of credit to the guy behind the board making sure everything sounded right. The sound was a little spotty during Pusha T, but 2Chainz's sound guy got the job done just right. I left the Showbox SODO just as satisfied with Mr. Epps as I had a little more than a year previous.
+    </p>
+    <p>
+I discovered 2Chainz on Youtube one day. I clicked on the link to 'Riot' after watching Nas' 'The Don' (3). I apparently liked what I saw because the next four videos I watched were 'Murder,' 'Spend It,' 'Got One,' and 'Cowboy.' I messaged one of my friends with video links and declared that 2Chainz was about to blow up. I was rooting for the guy hard. I liked his style, his lyrics, and his sound. I strongly felt that in the current state of rap he was capable of making the right moves to succeed.
+    </p>
+    <p>
+At the time I didn't know it, but it was about seven months after his first studio album, "T.R.U. Religion," and right before "Based on a T.R.U. Story" would come out. Shortly after, a friend played 'Mercy' for me and 'No Lie' came out. I felt a smug sense of satisfaction that my prediction was came true (4). It seemed like every few weeks a new hit of his was coming out. For a few friends and me, this culminated in going to a sold out a show at the Showbox SODO in Seattle on a frigid December night.
+    </p>
+    <p>
+It felt good to see things come full circle for the Atlanta rapper. Seeing the man that is 2Chainz, Tauheed Epps, perform again with just as much if not more energy and excitement than his previous show felt validating in some way. 2Chainz's songs became the soundtrack for Friday nights and road trips and other good memories. 2Chainz has become a defining artist in the short narrative of my life and I didn't want that ruined by a subpar performance. More than once during the show, I got to look around at the fifteen-hundred other concert goers and I realized something. Whether or not the artist performing in front of them made them recollect like he made me didn't matter. They had their hands in the air. They were dancing. They were rapping along. In that moment, it looked like no one cared about anything except having a good time. 2Chainz made that happen. If he comes to your city, go see him. And if you go in feeling cynical, you won't leave feeling the same way.
+    </p>
+        
+        <div class="img">
+          <img src= "images/icon.png" alt="sometext" img border="0px" width="16" height="16" img align= "center"/>
+          </div>
+          
+          <!-- <hr class="style-one"> -->
+          
+          <p>Tags:<a href= "link-archive.html"> Music,</a><a href= "link-archive.html"> 2Chainz,</a><a href= "link-archive.html"> Showbox SODO,</a><a href= "link-archive.html"> Rap</a>
+          </p>
+        
+          </div><!--content -->
+          
+          <div id="sidebar">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: -4px; font-size:12px; margin-top:5px; margin-bottom: 0px; padding-bottom:0px;">1. Go Hawks</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: 5px; font-size:12px; margin-top:8px; margin-bottom: 0px; padding-bottom:0px;">2. In no way am I a photographer.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: 5px; font-size:12px; margin-top:8px; margin-bottom: 0px; padding-bottom:0px;">3. I actually went that far back in my Youtube watch history to confirm this. It required a lot of scrolling.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: 5px; font-size:12px; margin-top:8px; margin-bottom: 0px; padding-bottom:0px;">4. The amateur A&amp;R man in me was humbled shortly after; thinking I was hot shit, I said Trinidad James was going to get just as big after I became infatuated with the 'All Gold Everything' song/video. He's out there... somewhere...</p>
+          
+          </div>
+         
+          
+  </div><!--body -->
+  <div id="footer">
+        copyright 2014
+    </div>
+    
+</div><!--container --> 
+</body>
+</html>
