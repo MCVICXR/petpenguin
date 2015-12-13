@@ -1,0 +1,393 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" type="image/png" href="images/icon.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+a:link {color: #000000; text-decoration: none;}
+a:visited {color: #000000;}
+a:hover {text-decoration: underline;}
+a:active {color:#0000FF;}
+</style>
+<title>The Pet Penguin</title>
+<style type="text/css">
+body {
+  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+  background-color: #383838;
+  margin: 0;
+  padding: 0; 
+}
+
+container {
+  width: 980px
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  height: 210px;
+  width: 980px;
+  background-image: url(images/r1c1.png);
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#navi {
+  height: 42px;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F8;
+  //background-image: url(navi.png);
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #333;
+  border-right-color: #333;
+  border-bottom-color: #333;
+  border-left-color: #333;
+}
+
+#bodycs {
+  width: 980px;
+  height: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F8;
+}
+
+#content {
+  width: 490px;
+  background-color: #F8F8F8;
+  float:left;
+  margin-bottom:
+}
+
+#sidebar {
+  width: 490px;
+  background-color: #F8F8F8;
+  float: left;  
+}
+
+#sidebarbox {
+  width: 420px;
+  background-color: #F8F8F8;
+  float: left;
+  margin-top: 20px;
+  margin-right: 35px;
+  margin-left: 35px;
+  border: medium double #000000;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+ho{
+  line-height:42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 80px;
+  padding-right: 30px;
+}
+ab{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+  border-left-style: solid;
+}
+cr{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+sa{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+la{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+tw{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+  border-left-style: solid;
+}
+ct{
+  line-height: 42px;
+  font-family: helvetica;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 80px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-color: #000;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  border-left-color: #000;
+}
+
+sb{
+  font-family: Helvetica;
+  font-size: 20px
+}
+sbc{
+  font-family: Helvetica;
+  font-size: 17px;
+  width: 300px;
+  left: auto;
+  right: auto;
+}
+
+div.img {
+  margin left: 35px;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  float: right;
+  text-align: center;
+} 
+
+#footer {
+  width: 980px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  vertical-align: bottom;
+}
+  hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+  hr.style-sb {
+    border: 0;
+    height: 1px;
+  width: 380px;
+    background: #333;
+}
+  hr.style-sbh {
+  margin-top:0px;
+    border: 0;
+    height: 3px;
+  width: 100px;
+    background: #333;
+}
+
+  @font-face {
+ font-family: corny;
+ src: url("Demo_ConeriaScript.eot") /* EOT file for IE */
+}
+
+  @font-face {
+ font-family: corny;
+ src: url("Demo_ConeriaScript.ttf") /* TTF file for CSS3 browsers */
+}
+</style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header"onclick="location.href='home0x.html';" style="cursor: pointer;"> 
+    </div>
+  
+      <div id="navi">  
+        <ho><a href="index.html">home</a></ho>
+        <ab><a href="about.html">about</a></ab> 
+        <cr><a href="credits.html">credits</a></cr>
+            <sa><a href="story-archive.html">story archive</a></sa>
+          <la><a href="link-archive.html">link archive</a></la>
+            <tw><a href="https://twitter.com/the_petpenguin" target="_blank">twitter</a></tw>
+            <ct><a href="contact.html">contact</a></ct>
+        </div>
+    
+    <div id="bodycs">
+ 
+      <div id="content">
+        
+        <p style="padding-top: 15px; padding-left:35px; font-family: Calibri; font-size:37px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px; line-height:1">
+        <a href="
+        Com.html
+        ">
+        After a Few Detours, Com Truise Takes Us Back to the 80's for a Night
+        </a>
+      </p>
+            <div class="img">
+              <a href="Com.html"><img src= "images/ct1.jpg" alt="sometext" img border="0px"                         width="450" height="300"/></a>
+            </div>   
+            
+            <p style="padding-top: 0px; padding-left:35px; font-family: Calibri; font-size:17px; padding-top:10px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px;">
+      But was the trip really worth it?
+      </p>
+            <br>
+            <hr class="style-one">
+             
+        
+          <p style="padding-top: 15px; padding-left:35px; font-family: Calibri; font-size:37px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px; line-height:1">
+        <a href="
+        cats.html
+        ">
+        The Cats We Have
+        </a>
+      </p>
+
+      <p style="padding-top: 0px; padding-left:35px; font-family: Calibri; font-size:17px;  padding-bottom:0px; margin-bottom: 0px; margin-top: 0px;">
+      A poem.
+      </p>
+            <br>
+<hr class="style-one"><!--start section 2 -->
+        
+               
+        <p style="padding-top: 15px; padding-left:35px; font-family: Calibri; font-size:37px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px; line-height:1">
+        <a href="
+        2Chainz.html
+        ">
+        2Chainz at Showbox SODO, Round 2
+        </a>
+      </p>
+            <div class="img">
+              <a href="2Chainz.html"><img src= "images/IMG_0522.jpg" alt="sometext" img border="0px"                        width="450" height="300"/></a>
+            </div>   
+            
+            <p style="padding-top: 0px; padding-left:35px; font-family: Calibri; font-size:17px; padding-top:10px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px;">
+      For the second time in a little more than a year, Tauheed Epps played another sold out show at the Showbox SODO in Seattle.
+      </p>
+
+  </div><!--content -->
+  
+  <div id="sidebar">
+  <div id="sidebarbox">
+      <p style="font-family: corny; padding-top: 5px; font-size:37px; margin-top:8px; margin-bottom: -12px; padding-bottom:0px;">links</p>
+        
+        <hr class="style-sb">
+    
+    <a href="
+    http://www.washingtonpost.com/news/opinions/wp/2014/02/27/the-outlook-list-of-things-we-do-not-say/
+    " target="_blank">
+    <img src="images/twp.jpg" alt="some_text" ></a>
+    <br>
+    <sb><a href="http://www.washingtonpost.com/news/opinions/wp/2014/02/27/the-outlook-list-of-things-we-do-not-say/" target="_blank">150 Journalism Cliches by Carlos Lozada</a></sb><br>
+    <p style="font-family: Calibri;
+  font-size: 17px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+    padding-top:0;
+    margin-top:0;
+    ">If you write at all, you should read this list of overused phrases compiled by Carlos Lozada of the Washington Post. Take notes.</p>
+    <hr class="style-sb">
+    
+    <a href="
+    https://soundcloud.com/skrillex/sets/recess" target="_blank"><img src="images/skrillex.jpg" alt="some_text" style="height: 225px; width=225px;"></a>
+    <br>
+    <sb><a href="
+    https://soundcloud.com/skrillex/sets/recess" target="_blank">Skrillex - Recess</a></sb><br>
+    <p style="font-family: Calibri;
+  font-size: 17px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+    padding-top:0;
+    margin-top:0;
+    ">Skrillex's new album, "Recess," is actually pretty good. He takes steps forward without feeling like he has to reinvent his sound, so it sort of makes you feel like you're hearing your first dubstep song back in 2010 all over again. Rage on! Or not.</p>
+    
+        <hr class="style-sb">
+        
+    <a href="
+    https://soundcloud.com/y-e-r-s
+    " target="_blank">
+    <img src="images/years.jpg" alt="some_text" style="height: 225px; width=225px;"></a>
+    <br>
+    <sb><a href="https://soundcloud.com/y-e-r-s" target="_blank">YEΛRS</a></sb><br>
+    <p style="font-family: Calibri;
+  font-size: 17px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+    padding-top:0;
+    margin-top:0;
+    ">Chill beats from Japan. Check out $Zanes$, スパイク・スピーゲル - ビシャス, and あずにゃん</p>
+    
+    
+    
+  </div><!--box -->
+  </div><!--sidebar -->
+  
+  
+  
+  </div><!--body -->
+  <div id="footer">
+        copyright 2014
+ </div>
+</div>
+</body>
+</html>

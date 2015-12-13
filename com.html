@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" type="image/png" href="images/icon.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+a:link {color: #000000; text-decoration: none;}
+a:visited {color: #000000;}
+a:hover {text-decoration: underline;}
+a:active {color:#0000FF;}
+</style>
+<title>The Pet Penguin</title>
+<style type="text/css">
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #383838;
+	margin: 0;
+	padding: 0;	
+}
+
+container {
+	width: 980px
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	height: 210px;
+	width: 980px;
+	background-image: url(images/r1c1.png);
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#navi {
+	height: 42px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F8F8F8;
+	//background-image: url(navi.png);
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #333;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+}
+
+#body {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F8F8F8;
+}
+
+#content {
+	width: 600px;
+	height: 3510px;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #F8F8F8;
+}
+
+#sidebar {
+	width: 360px;
+	height: 2252px;
+	margin-top: -2387px;
+	margin-left: auto;
+	background-color: #F8F8F8;
+	float: right;	
+}
+
+#sidebarbox {
+	width: 180px;
+	background-color: #F8F8F8;
+	float: right;
+	margin-top: 20px;
+	margin-right: 35px;
+	margin-left: 35px;
+	border: medium double #000000;
+	text-align: left;
+	margin-bottom: 35px;
+}
+
+#container #body #content p {
+	font-family: Calibri;
+	font-size: 17px;
+	padding-left: 35px;
+}
+
+ho{
+	line-height:42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 80px;
+	padding-right: 30px;
+}
+ab{
+	line-height: 42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	border-left-style: solid;
+}
+cr{
+	line-height: 42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+sa{
+	line-height: 42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+la{
+	line-height: 42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+tw{
+	line-height: 42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	border-left-style: solid;
+}
+ct{
+	line-height: 42px;
+	font-family: helvetica;
+	font-size: 16px;
+	padding-left: 30px;
+	padding-right: 80px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+
+div.img {
+  margin-left: 20px;
+  padding: 5px;
+  height: auto;
+  width: auto;
+  text-align: center;
+}	
+
+div.desc{
+  margin-left: 35px;	
+  font-family: helvetica;
+  font-size: 12px;	
+  text-align: left;
+  font-weight: normal;
+}
+
+#footer {
+	width: 980px;
+	height: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:42px;
+	background-color: #F8F8F8;
+
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+}
+	hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+	hr.style-sb {
+    border: 0;
+    height: 1px;
+	width: 380px;
+    background: #333;
+}
+	hr.style-sbh {
+	margin-top:0px;
+    border: 0;
+    height: 3px;
+	width: 100px;
+    background: #333;
+}
+
+	@font-face {
+ font-family: corny;
+ src: url("Demo_ConeriaScript.eot") /* EOT file for IE */
+}
+
+	@font-face {
+ font-family: corny;
+ src: url("Demo_ConeriaScript.ttf") /* TTF file for CSS3 browsers */
+}
+	
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header"onclick="location.href='home0x.html';" style="cursor: pointer;"> 
+		</div>
+	
+  		<div id="navi">  
+        <ho><a href="index.html">home</a></ho>
+        <ab><a href="about.html">about</a></ab> 
+        <cr><a href="credits.html">credits</a></cr>
+            <sa><a href="story-archive.html">story archive</a></sa>
+          <la><a href="link-archive.html">link archive</a></la>
+            <tw><a href="https://twitter.com/the_petpenguin" target="_blank">twitter</a></tw>
+            <ct><a href="contact.html">contact</a></ct>
+        </div>
+		
+		<div id="body">
+ 
+  		<div id="content">
+        
+        <p style="padding-top: 15px; padding-left:35px; font-family: Calibri; font-size:37px; padding-bottom:0px; margin-bottom: 0px; margin-top: 0px; line-height:1">
+		 Com Truise Creates Neon Colored Nostalgia
+		</p>
+        
+        <!-- <p>February 16th, 2014</p> -->
+        
+        <div class="img">
+            	<img src= "images/ct1.jpg" alt="sometext" img border="0px" width="550" height="400"/>
+        </div>	
+        <div class="desc">The first of several great concert pictures.</div>
+        
+        <p>
+It was 7:30pm and I was exhausted from a prior late night, an early morning and a plodding day at the office. I had just finished my customary Tuesday night dinner with my grandmother but, as much as I wanted to, I wasn't going home to bed. Stifling yawns, I got into my car and made my way to the nearest I-5 onramp. I had to go to Capitol Hill. I bought a ticket to the Com Truise show at Chop Suey and you don't get refunds to concerts because you were tired and didn't feel like going.
+		</p>
+		<p>
+I wasn't really sure what to expect from this show in terms of crowd turnout. My initial discovery of Com Truise took place in one of the less traveled regions of the Youtubes, where videos have view totals in the low hundreds of thousands, not hundreds of millions. It seemed pretty underground. About a year ago, I went to a very poorly attended show in Vancouver BC that featured another retro new wave act, Miami Nights 1984. The music was great, but the dance floor was empty. With that experience I had my reservations as to whether Com Truise's brand of contemporary 80's electronica had really caught on. However, my doubts were dispelled when I was standing in line at will call and witnessed this scene:
+		</p>
+		<p>
+Guy behind me to the bouncer, "Are you guys gonna sell out?"
+		</p>
+        <p>
+        Bouncer, "Yes."
+        </p>
+        <p>
+        That answered that question.
+        </p>
+        
+		<p>
+Once inside, I took a look around and noted that Chop Suey hadn't really changed at all in ten years. It had been host to some of my first hip hop shows around the ages of sixteen or seventeen; Murs, Blueprint and Macklemore (1). There was still the decorative Chinese dragon hanging from the ceiling and the red Chinese lanterns hanging over the dimly lit bar. I made my way over to the counter and bought a PBR tallboy to nurse while I sat around and killed the hour until the show started.
+		</p>
+        
+        <div class="img">
+            	<img src= "images/ct2.jpg" alt="sometext" img border="0px" width="550" height="400"/>
+        </div>	
+        <div class="desc">The guy really needed a taller table.</div>
+        
+		<p>
+Around nine, the lights went down and the show started. Two acts that I'd never heard of were opening for Com Truise and once again I was in the dark as to what to expect. The first opener was a really tall guy that called himself Zoolab. He hunched over his simple setup that was situated on a table that was way too short for him. His first tunes had a lot of bass, almost dubstep-like, but without the 'wubs.' The remainder of Zoolab's set incorporated various elements of electronic music. I wouldn't say he did it seamlessly, but his style was unpredictable and that made it fun to listen to. He finished his thirty-minute set strong to a growing crowd.
+		</p>
+        <div class="img">
+            	<img src= "images/ct3.jpg" alt="sometext" img border="0px" width="550" height="400"/>
+        </div>	
+        <div class="desc">These two guys were Phantoms. Their music was about as shitty as this picture I took of them.</div>
+		<p>
+During the time it took to change sets, it seemed like the venue filled to its max capacity. The second act, a duo named Phantoms, started, but only a few minutes into their set I abandoned my spot that was quickly taken by someone else. The L.A. based Phantoms came to Seattle with a pounding, repetitive and overplayed style of house music that I'd heard all too much of before. I quickly got bored found the chair in the back of the house. Phantom's set went on for an hour too long, but it gave me a chance to drink another PBR, strike up conversation with strangers, and have a short respite before the main act.
+		</p>
+        <div class="img">
+            	<img src= "images/ct4.jpg" alt="sometext" img border="0px" width="550" height="400"/>
+        </div>	
+        <div class="desc">The guy really needed a taller table.</div>
+		<p>
+Com Truise finally came on at 11. The one-man act had the most elaborate stage set up of the night. A pentagon separated a giant letter ‘C’ and ‘T.' All three were of equal height and flashed an assortment of neon colors. A fog machine accented the visual effects. Positioned above the impressive stage display on some sort of elevated platform was the DJ himself, Seth Haley, AKA Com Truise. Without much ado he started delivering his groovy and fluid synth laden songs to an eager crowd. While Truise's music invokes nostalgic tropes from the Decade of Greed, it's cleaner, sharper, and more refined than its source material, even in a live setting. The only downside was that many of the songs lack any vocals, and after a while it just started to feel like music by the numbers. There wasn't much going on during the show either other than some flashing lights and a figure that was shrouded by fog and glare that occasionally spoke to the crowd.  
+		</p>
+        <p>
+Ultimately, my long day got to me and my patience wore out. I left part way through the Com Truise's set. I didn't leave early because I thought the music was bad. It's actually quite good. However, Com Truise live wasn't much different than Com Truise playing through your headphones at home. 
+
+
+        </p>
+        
+        <div class="img">
+          <img src= "images/icon.png" alt="sometext" img border="0px" width="16" height="16" img align= "center"/>
+          </div>
+          
+          <!-- <hr class="style-one"> -->
+          
+          <p>Tags:<a href= "link-archive.html"> Music,</a><a href= "link-archive.html"> Com Truise,</a><a href= "link-archive.html"> Chop Suey,</a><a href= "link-archive.html"> 80's,</a><a href= "link-archive.html"> Zoolab</a>
+          </p>
+          
+        
+          </div><!--content -->
+          
+          <div id="sidebar">
+          <p style="font-family: helvetica; padding-top: -4px; font-size:12px; margin-top:5px; margin-bottom: 0px; padding-bottom:0px;">1. Back then Ben was still just a normal, underground, Seattle rapper wearing a white-t, baggy jeans, Air Maxes and a chain.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: 5px; font-size:12px; margin-top:8px; margin-bottom: 0px; padding-bottom:0px;"></p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: 5px; font-size:12px; margin-top:8px; margin-bottom: 0px; padding-bottom:0px;"></p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-family: helvetica; padding-top: 5px; font-size:12px; margin-top:8px; margin-bottom: 0px; padding-bottom:0px;"></p>
+          
+          </div>
+         
+          
+  </div><!--body -->
+	<div id="footer">
+	      copyright 2014
+    </div>
+    
+</div><!--container --> 
+</body>
+</html>
